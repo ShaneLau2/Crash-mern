@@ -5,15 +5,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>crash mern</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Coiny&family=Sono:wght@200..800&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <img src="https://images.vexels.com/media/users/3/223274/isolated/preview/278b0a1e8ce1e77990cd391555662653-message-icon-flat.png" alt="logo" height="68" width="68" />
-        <h1>small talk</h1>
+        <h1>Shane's Everything</h1>
+        <button>Share something</button>
     </header>
-    <form action="">
-        <input type="text" placeholder="write something interesting..." /><span>2000</span>
+    <form action="" class="note-form">
+        <input type="text" placeholder="write something interesting..."><span>2000</span>
         <input type="text" placeholder="attact the link for your post..." />
         <select name="Catalogy" id="Catalogy">
             <option value="">Choose a Catalogy</option>
@@ -46,18 +51,29 @@
         </aside>
         <section>
             <ul>
-                <li>
-                    <p>
+                <li class="note">
+                    <p >
                         React is being developed by Meta.
                         <a href="https://opensource.fb.com/" target="_blank">(Source)</a>
-                        <span>#Programming#</span>
+                        <span class="tag">#Programming#</span>
+                        <div>
+                            <button>👍 <strong>9</strong></button>
+                            <button>🤯 <strong>4</strong></button>
+                            <button>⛔️ <strong>7</strong></button>
+                        </div>
+                        
                     </p>
                 </li>
-                <li>
-                    <p>
+                <li class="note">
+                    <p >
                         Science is a rigorous, systematic endeavor that builds and organizes knowledge in the form of testable explanations and predictions about the world.
                         <a href="https://en.wikipedia.org/wiki/Science" target="_blank">(Source)</a>
-                        <span>#Misc#</span>
+                        <span class="tag">#Misc#</span>
+                        <div>
+                            <button>👍 <strong>3</strong></button>
+                            <button>🤯 <strong>2</strong></button>
+                            <button>⛔️ <strong>1</strong></button>
+                        </div>
                     </p>
                 </li>
             </ul>
