@@ -1,84 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>crash mern</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Coiny&family=Sono:wght@200..800&display=swap" rel="stylesheet">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Coiny&family=Sono:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
+    <div class="container">
     <header class="header">
-        <img src="https://images.vexels.com/media/users/3/223274/isolated/preview/278b0a1e8ce1e77990cd391555662653-message-icon-flat.png" alt="logo" height="68" width="68" />
+      <div class="logo">
+        <img
+          src="https://images.vexels.com/media/users/3/223274/isolated/preview/278b0a1e8ce1e77990cd391555662653-message-icon-flat.png"
+          alt="logo"
+          height="68"
+          width="68"
+        />
         <h1>Shane's Everything</h1>
-        <button>Share something</button>
+      </div>
+
+      <button class="btn btn-large">Share something</button>
     </header>
     <form action="" class="note-form">
-        <input type="text" placeholder="write something interesting..."><span>2000</span>
-        <input type="text" placeholder="attact the link for your post..." />
-        <select name="Catalogy" id="Catalogy">
-            <option value="">Choose a Catalogy</option>
-            <option value="Programming">Programming</option>
-            <option value="Life">Life</option>
-            <option value="University">University</option>
-            <option value="Misc">Misc</option>
-        </select>
-        <button>Post</button>
+      <input type="text" placeholder="write something interesting..." /><span
+        >2000</span
+      >
+      <input type="text" placeholder="attact the link for your post..." />
+      <select name="Catalogy" id="Catalogy">
+        <option value="">Choose a Catalogy</option>
+        <option value="Programming">Programming</option>
+        <option value="Life">Life</option>
+        <option value="University">University</option>
+        <option value="Misc">Misc</option>
+      </select>
+      <button class="btn btn-large">Post</button>
     </form>
-    <main>
-        <aside>
-            <ul>
-                <li>
-                    <button>All</button>
-                </li>
-                <li>
-                    <button>Programming</button>
-                </li>
-                <li>
-                    <button>Life</button>
-                </li>
-                <li>
-                    <button>University</button>
-                </li>
-                <li>
-                    <button>Misc</button>
-                </li>
-            </ul>
-        </aside>
-        <section>
-            <ul>
-                <li class="note">
-                    <p >
-                        React is being developed by Meta.
-                        <a href="https://opensource.fb.com/" target="_blank">(Source)</a>
-                        <span class="tag">#Programming#</span>
-                        <div>
-                            <button>👍 <strong>9</strong></button>
-                            <button>🤯 <strong>4</strong></button>
-                            <button>⛔️ <strong>7</strong></button>
-                        </div>
-                        
-                    </p>
-                </li>
-                <li class="note">
-                    <p >
-                        Science is a rigorous, systematic endeavor that builds and organizes knowledge in the form of testable explanations and predictions about the world.
-                        <a href="https://en.wikipedia.org/wiki/Science" target="_blank">(Source)</a>
-                        <span class="tag">#Misc#</span>
-                        <div>
-                            <button>👍 <strong>3</strong></button>
-                            <button>🤯 <strong>2</strong></button>
-                            <button>⛔️ <strong>1</strong></button>
-                        </div>
-                    </p>
-                </li>
-            </ul>
-        </section>
+    <main class="main">
+      <aside>
+        <ul>
+          <li>
+            <button class="btn btn-all-categories">All</button>
+          </li>
+          <li>
+            <button class="btn btn-category">Programming</button>
+          </li>
+          <li>
+            <button class="btn btn-category">Life</button>
+          </li>
+          <li>
+            <button class="btn btn-category">University</button>
+          </li>
+          <li>
+            <button class="btn btn-category">Misc</button>
+          </li>
+        </ul>
+      </aside>
+      <section>
+        <ul>
+          <li class="note">
+            <p>
+              React is being developed by Meta.
+              <a class="source" href="https://opensource.fb.com/" target="_blank">(Source)</a>
+            </p>
+            <span class="tag" style="background-color: #3b82f6"
+              >#Programming#</span
+            >
+            <div class="vote-buttons">
+              <button >👍 <strong>9</strong></button>
+              <button >🤯 <strong>4</strong></button>
+              <button >⛔️ <strong>7</strong></button>
+            </div>
+          </li>
+          <li class="note">
+            <p>
+              Science is a rigorous, systematic endeavor that builds and
+              organizes knowledge in the form of testable explanations and
+              predictions about the world.
+              <a class="source" href="https://en.wikipedia.org/wiki/Science" target="_blank"
+                >(Source)</a
+              >
+            </p>
+            <span class="tag" style="background-color: #8b5cf6">#Misc#</span>
+            <div class="vote-buttons">
+              <button >👍 <strong>3</strong></button>
+              <button >🤯 <strong>2</strong></button>
+              <button >⛔️ <strong>1</strong></button>
+            </div>
+          </li>
+        </ul>
+      </section>
     </main>
-</body>
-
+  </div>
+  </body>
 </html>

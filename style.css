@@ -1,41 +1,116 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    background-color: #292524;
-    color: #fafaf9;
-    font-family: "Sono",sans-serif;
-    padding: 40px;
+/*MAIN LAYOUT*/
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 48px 64px;
 }
-.header{
-    margin-bottom: 40px;
+body {
+  background-color: #292524;
+  color: #fafaf9;
+  font-family: "Sono", sans-serif;
+  padding: 40px;
 }
-h1{
-    font-size: 48px;
-    text-transform: uppercase;
-    font-family: "Coiny", sans-serif;
+.header {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.note{
-    font-size: 24px;
-    line-height: 1.4;
-    background-color: #44403c;
-    margin-bottom: 10px;
-    padding: 16px 24px;
+.main {
+  display: grid;
+  grid-template-columns: 0.25fr 1fr;
+  gap: 40px;
+}
+/*ELEMENTS*/
+.btn{
+  border: none;
+  font-family: "Coiny", sans-serif;
+  line-height: 1;
+  text-transform: uppercase;
+  font-size: 17px;
+  padding: 16px 0 14px;
+  background-image: linear-gradient(120deg, #3b82f6 0%, #ef4444 ,#16a34a,#eab308);
+  color: inherit;
+}
+.btn-large{
+  font-size: 20px;
+  padding: 20px 32px 17px;
+}
+.btn-all-categories{
+  margin-bottom: 16px;
+  width: 100%;
+}
+.logo img {
+  width: 68px;
+  height: 68px;
+}
+.source:link,
+.source:visited{
+  font-size: 14px;
+  font-family: "Coiny", sans-serif;
+  color: #a8a29e;
+  margin-left: 12px;
+  transition: 0.3s;
+  text-decoration: none;
+}
+.source:hover,
+.source:active{
+  color: rgb(52, 52, 116);
+}
+.logo {
+  display: flex;
+  justify-self: center;
+  gap: 10px;
+}
+h1 {
+  font-size: 42px;
+  text-transform: uppercase;
+  font-family: "Coiny", sans-serif;
+  margin-top: 10px;
+  line-height: 1;
+}
+.note-form {
+  background-color: #44403c;
+  margin-bottom: 40px;
+  padding: 16px 40px;
+  text-align: center;
+}
+.note {
+  font-size: 24px;
+  line-height: 1.4;
+  background-color: #44403c;
+  margin-bottom: 10px;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  letter-spacing: -1px;
+}
+.tag {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: "Coiny", sans-serif;
+  padding-bottom: 7px;
+  padding-top: 3px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 5%;
+}
 
+.vote-buttons {
+  margin-left: auto;
+  display: flex;
+  gap: 8px;
+  padding-right: 10px;
 }
-.tag{
-    text-transform: uppercase;
-    font-size: 18px;
-    font-family: "Coiny", sans-serif;
-
+.vote-buttons>button {
+  display: flex;
 }
-.note-form{
-    background-color: #44403c;
-    margin-bottom: 40px;
-    padding: 16px 40px;
-}
-ul{
-    list-style-type: none;
+ul {
+  list-style-type: none;
 }
