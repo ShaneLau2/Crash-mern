@@ -24,10 +24,11 @@
         <h1>Shane's Everything</h1>
       </div>
 
-      <button class="btn btn-large">Share something</button>
+      <button class="btn btn-large btn-open">Share something</button>
     </header>
-    <form action="" class="note-form">
-      <input type="text" placeholder="write something interesting..." /><span
+    <form action="" class="note-form hidden">
+      <textarea  placeholder="write something interesting..." ></textarea>
+        <span
         >2000</span
       >
       <input type="text" placeholder="attact the link" />
@@ -61,7 +62,7 @@
         </ul>
       </aside>
       <section>
-        <ul>
+        <ul class="note-list">
           <li class="note">
             <p>
               React is being developed by Meta.

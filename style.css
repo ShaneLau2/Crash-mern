@@ -63,6 +63,7 @@ body {
   );
   color: #fafaf9;
   transform: scale(1.1) rotate(-2deg);
+  cursor: pointer;
 }
 .btn-large {
   font-size: 20px;
@@ -83,7 +84,7 @@ body {
 }
 .source:link,
 .source:visited {
-  font-size: 14px;
+  font-size: 20px;
   font-family: "Coiny", sans-serif;
   color: #a8a29e;
   margin-left: 12px;
@@ -180,16 +181,25 @@ ul {
     flex-direction: column;
     gap: 10px;
     align-items: stretch;
-
+  }
+  .note-form textarea{
+    width: 100%;
   }
 
 }
-.note-form input:first-child{
+.note-form textarea{
   flex-grow: 1;
-
+  background-color: #7b716c;
+  border: none;
+  /* border-radius: 100px; */
+  padding: 10px;
+  font-size: 28px;
+  color: inherit;
+  font-family: inherit;
+  
 }
 .note-form input,
-.note-form select {
+.note-form select{
   background-color: #7b716c;
   border: none;
   border-radius: 100px;
@@ -199,6 +209,9 @@ ul {
   font-family: inherit;
 }
 .note-form input::placeholder {
+  color: #534d49;
+}
+.note-form textarea::placeholder{
   color: #534d49;
 }
 .note-form span {
