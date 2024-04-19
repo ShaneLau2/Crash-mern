@@ -24,7 +24,7 @@ body {
 }
 .main {
   display: grid;
-  grid-template-columns: 0.25fr 1fr;
+  grid-template-columns: 0.30fr 1fr;
   gap: 40px;
 }
 @media(max-width:900px){
@@ -198,10 +198,13 @@ ul {
   color: inherit;
   font-family: inherit;
 }
-.note-form button::placeholder {
+.note-form input::placeholder {
   color: #534d49;
 }
 .note-form span {
   font-weight: 700;
   font-size: 18px;
+}
+.hidden {
+  display: none !important;
 }
