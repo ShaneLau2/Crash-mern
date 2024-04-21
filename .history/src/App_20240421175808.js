@@ -54,8 +54,8 @@ function App() {
   return (
     <>
       {/* HEADER */}
-      <header className="header">
-        <div className="logo">
+      <header classNameName="header">
+        <div classNameName="logo">
           <img
             src="https://todayilearned-beta.netlify.app/logo.png"
             alt="logo"
@@ -63,7 +63,7 @@ function App() {
           <h1>{appTitle}</h1>
         </div>
 
-        <button className="btn btn-large btn-open">Share something</button>
+        <button classNameName="btn btn-large btn-open">Share something</button>
       </header>
       <NewNoteForm />
 
