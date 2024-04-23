@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Crash-mern/static/css/main.a2646c9c.css",
+    "main.js": "/Crash-mern/static/js/main.7eacdb2d.js",
+    "static/js/952.328e3be5.chunk.js": "/Crash-mern/static/js/952.328e3be5.chunk.js",
+    "index.html": "/Crash-mern/index.html",
+    "main.a2646c9c.css.map": "/Crash-mern/static/css/main.a2646c9c.css.map",
+    "main.7eacdb2d.js.map": "/Crash-mern/static/js/main.7eacdb2d.js.map",
+    "952.328e3be5.chunk.js.map": "/Crash-mern/static/js/952.328e3be5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a2646c9c.css",
+    "static/js/main.7eacdb2d.js"
+  ]
+}
